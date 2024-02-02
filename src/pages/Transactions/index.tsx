@@ -1,6 +1,7 @@
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { useTransactions } from '../../contexts/Transactions'
+import { dateFormatter, priceFormatter } from '../../utils/formater'
 import { SearchForm } from './components/SearchForm'
 import {
   PriceHighlight,
@@ -25,11 +26,11 @@ export function Transactions() {
                 <td width="50%">{transaction.description}</td>
                 <td>
                   <PriceHighlight variant={transaction.type}>
-                    {transaction.price}
+                    {priceFormatter.format(transaction.price / 100)}
                   </PriceHighlight>
                 </td>
                 <td>{transaction.category}</td>
-                <td>{transaction.createdAt}</td>
+                <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
               </tr>
             ))}
           </tbody>

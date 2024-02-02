@@ -2,51 +2,58 @@
   "transactions": [
     {
       "id": "1a9d5a5b-7c5d-4f76-8d21-7e24ac05a3a1",
-      "description": "Salário",
-      "price": 250000,
+      "description": "Salário Mensal",
+      "price": 300000,
       "type": "income",
+      "category": "Renda",
       "createdAt": "2023-12-01T08:00:00Z"
     },
     {
       "id": "2c1f0b8e-15a7-4b88-8b84-c8e3a9b4e58d",
-      "description": "Aluguel",
+      "description": "Aluguel Residencial",
       "price": 80000,
       "type": "outcome",
+      "category": "Moradia",
       "createdAt": "2023-12-02T15:30:00Z"
     },
     {
       "id": "3e4a95c7-3b75-4a1a-8361-6d651456d789",
-      "description": "Supermercado",
+      "description": "Compras no Mercado",
       "price": 15000,
       "type": "outcome",
+      "category": "Alimentação",
       "createdAt": "2023-12-03T12:15:00Z"
     },
     {
       "id": "4f96b3d2-8a93-4ea1-9746-51a9e15e0c4f",
-      "description": "Freelance",
+      "description": "Trabalho Freelance",
       "price": 60000,
       "type": "income",
+      "category": "Renda",
       "createdAt": "2023-12-04T09:45:00Z"
     },
     {
       "id": "5bb1788d-8323-4718-aa71-0db6cc1ae496",
-      "description": "Conta de Luz",
+      "description": "Conta de Luz Residencial",
       "price": 5000,
       "type": "outcome",
+      "category": "Moradia",
       "createdAt": "2023-12-05T18:30:00Z"
     },
     {
       "id": "6d42cb3c-aa94-41b5-9c0f-41a0eabec816",
-      "description": "Bônus no Trabalho",
+      "description": "Bônus por Desempenho",
       "price": 30000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-06T14:00:00Z"
     },
     {
       "id": "7f8dc50b-96ec-4d20-8d5a-b4e61c7d0cf3",
-      "description": "Internet",
+      "description": "Assinatura de Internet",
       "price": 6000,
       "type": "outcome",
+      "category": "Utilidades",
       "createdAt": "2023-12-07T20:00:00Z"
     },
     {
@@ -54,41 +61,47 @@
       "description": "Reembolso de Despesas",
       "price": 30000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-08T10:30:00Z"
     },
     {
       "id": "9c67a743-2b89-4e48-b19a-44608e9b9e9a",
-      "description": "Restaurante",
+      "description": "Jantar em Restaurante",
       "price": 3500,
       "type": "outcome",
+      "category": "Lazer",
       "createdAt": "2023-12-09T19:45:00Z"
     },
     {
       "id": "10e76f45-9c08-4284-aa52-692ea6f65428",
-      "description": "Presente",
+      "description": "Presente para Amigo Secreto",
       "price": 25000,
       "type": "outcome",
+      "category": "Presentes",
       "createdAt": "2023-12-10T12:00:00Z"
     },
     {
       "id": "11d309f1-d3bf-46cb-8b33-ff986f894585",
-      "description": "Consultoria",
+      "description": "Consultoria em Tecnologia",
       "price": 120000,
       "type": "income",
+      "category": "Renda",
       "createdAt": "2023-12-11T09:00:00Z"
     },
     {
       "id": "12b8dd8a-5c9d-4b07-a517-b308a3a4d33c",
-      "description": "Compra Online",
+      "description": "Compra de Livros Online",
       "price": 3500,
       "type": "outcome",
+      "category": "Cultura",
       "createdAt": "2023-12-12T14:30:00Z"
     },
     {
       "id": "13d02ef3-0f0b-44cd-9507-1f439c5ac24a",
-      "description": "Combustível",
+      "description": "Abastecimento de Combustível",
       "price": 5000,
       "type": "outcome",
+      "category": "Transporte",
       "createdAt": "2023-12-13T17:15:00Z"
     },
     {
@@ -96,27 +109,31 @@
       "description": "Bônus de Fim de Ano",
       "price": 100000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-14T08:45:00Z"
     },
     {
       "id": "15c1d3e8-40b9-4940-a2c5-bb632c1c5a8a",
-      "description": "Cinema",
+      "description": "Sessão de Cinema",
       "price": 2500,
       "type": "outcome",
+      "category": "Lazer",
       "createdAt": "2023-12-15T21:00:00Z"
     },
     {
       "id": "16e8041c-e02b-43fc-bc34-20a37ce4a0ce",
-      "description": "Almoço",
+      "description": "Almoço Fora de Casa",
       "price": 4000,
       "type": "outcome",
+      "category": "Alimentação",
       "createdAt": "2023-12-16T12:30:00Z"
     },
     {
       "id": "17a437ef-5094-4eb7-9a72-c345582fde6b",
-      "description": "Presente de Natal",
+      "description": "Presente de Natal para Família",
       "price": 80000,
       "type": "outcome",
+      "category": "Presentes",
       "createdAt": "2023-12-17T18:00:00Z"
     },
     {
@@ -124,91 +141,104 @@
       "description": "Consulta Médica",
       "price": 15000,
       "type": "outcome",
+      "category": "Saúde",
       "createdAt": "2023-12-18T14:45:00Z"
     },
     {
       "id": "19dbf551-2ecb-4f0e-b4ab-903098049468",
-      "description": "Café da Manhã",
+      "description": "Café da Manhã na Padaria",
       "price": 1000,
       "type": "outcome",
+      "category": "Alimentação",
       "createdAt": "2023-12-19T09:30:00Z"
     },
     {
       "id": "20a2aefd-1c6d-46cf-b3f1-99057e9df7d5",
-      "description": "Presente Amigo Secreto",
+      "description": "Presente para Amigo Secreto no Trabalho",
       "price": 30000,
       "type": "outcome",
+      "category": "Presentes",
       "createdAt": "2023-12-20T17:30:00Z"
     },
     {
       "id": "21be5364-e5f1-4a29-bef5-1f8bf5c4778f",
-      "description": "Reembolso Viagem",
+      "description": "Reembolso de Viagem de Trabalho",
       "price": 90000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-21T11:00:00Z"
     },
     {
       "id": "22d7f0e5-68e2-4c56-82a9-42d65350731a",
-      "description": "Conta de Água",
+      "description": "Conta de Água Residencial",
       "price": 3500,
       "type": "outcome",
+      "category": "Moradia",
       "createdAt": "2023-12-22T16:15:00Z"
     },
     {
       "id": "23aa2d26-0f17-4292-8aeb-65c271448251",
-      "description": "Bônus Metas Alcançadas",
+      "description": "Bônus por Metas Alcançadas no Trabalho",
       "price": 120000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-23T13:45:00Z"
     },
     {
       "id": "24c2fbdb-c071-429b-81b5-c53a84885c29",
-      "description": "Manutenção Carro",
+      "description": "Manutenção do Carro",
       "price": 50000,
       "type": "outcome",
+      "category": "Transporte",
       "createdAt": "2023-12-24T20:30:00Z"
     },
     {
       "id": "25fca6c4-487b-47b5-9d52-879d785d7f6b",
-      "description": "Livros",
+      "description": "Compra de Livros na Livraria",
       "price": 25000,
       "type": "outcome",
+      "category": "Cultura",
       "createdAt": "2023-12-25T09:00:00Z"
     },
     {
       "id": "26d9a8cf-ff3a-4f8e-ae24-8924ee36b535",
-      "description": "Taxa de Serviço",
+      "description": "Taxa de Serviço Bancário",
       "price": 1500,
       "type": "outcome",
+      "category": "Finanças",
       "createdAt": "2023-12-26T18:45:00Z"
     },
     {
       "id": "27e6a1d1-8d86-4c68-98c0-f4245c0d4685",
-      "description": "Cinema",
+      "description": "Sessão de Cinema em Família",
       "price": 3000,
       "type": "outcome",
+      "category": "Lazer",
       "createdAt": "2023-12-27T15:00:00Z"
     },
     {
       "id": "28c25f1a-5e06-475f-91d9-74ec1b85ea3c",
-      "description": "Hora Extra",
+      "description": "Hora Extra no Trabalho",
       "price": 60000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-28T11:30:00Z"
     },
     {
       "id": "29f186a4-7a20-4c3f-b7a7-c3b8b57b4979",
-      "description": "Roupas",
+      "description": "Compra de Roupas",
       "price": 4500,
       "type": "outcome",
+      "category": "Moda",
       "createdAt": "2023-12-29T19:15:00Z"
     },
     {
       "id": "30c8a07e-736a-46c2-8dbb-3f4dd45aa0bd",
-      "description": "Bônus Produtividade",
+      "description": "Bônus por Produtividade",
       "price": 80000,
       "type": "income",
+      "category": "Renda Extra",
       "createdAt": "2023-12-30T14:30:00Z"
     }
-  ]
+  ]  
 }
