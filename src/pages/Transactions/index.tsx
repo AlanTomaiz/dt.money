@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
-import { useTransactions } from '../../contexts/Transactions'
+import { useTransactions } from '../../hooks/useTransactions'
 import { dateFormatter, priceFormatter } from '../../utils/formater'
 import { SearchForm } from './components/SearchForm'
 import {

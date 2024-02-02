@@ -31,7 +31,7 @@ $ cd dt.money
 # Instale as dependências
 $ npm install
 
-# Rode o servidor (MOKE)
+# Rode o servidor (FAKE)
 $ npm run dev:server
 
 # Rode a aplicação
