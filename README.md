@@ -10,10 +10,11 @@
 
 ## 🚀 Tecnologias
 Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
-* [Typescript](https://www.typescriptlang.org/)      
-* [React](https://reactjs.org/)      
+* [Typescript](https://www.typescriptlang.org/)
+* [React](https://reactjs.org/)
 * [Styled Components](https://styled-components.com/)
-* [MirageJS](https://miragejs.com/)
+* [Radix-UI](https://www.radix-ui.com/primitives/)
+* [Json-Server](https://github.com/typicode/json-server/)
 
 ## 💻 Como rodar
 ignite-reactjs-03-dt-money
@@ -29,6 +30,9 @@ $ cd dt.money
 
 # Instale as dependências
 $ npm install
+
+# Rode o servidor (MOKE)
+$ npm run dev:server
 
 # Rode a aplicação
 $ npm run dev
