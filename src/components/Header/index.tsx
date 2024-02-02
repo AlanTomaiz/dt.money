@@ -1,6 +1,6 @@
-import { HeaderButton, HeaderContainer, HeaderContent } from "./styles";
+import { HeaderButton, HeaderContainer, HeaderContent } from './styles'
 
-import logoSvg from '../../assets/logo.svg';
+import logoSvg from '../../assets/logo.svg'
 
 export function Header() {
   return (
