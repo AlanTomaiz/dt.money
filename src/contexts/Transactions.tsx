@@ -1,4 +1,5 @@
-import { ReactNode, createContext, useEffect, useState } from 'react'
+import { ReactNode, useCallback, useEffect, useState } from 'react'
+import { createContext } from 'use-context-selector'
 import { api } from '../lib/axios'
 
 interface Transaction {
@@ -27,14 +28,18 @@ export const TransactionsContext = createContext({} as TransactionsContext)
 export function TransactionsProvide({ children }: ProviderProps) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
 
-  async function loadTransactions(query?: string) {
-    // const url = new URL('http://localhost:3333/transactions/')
+  // async function loadTransactions(query?: string) {
+  //   const url = new URL('http://localhost:3333/transactions/')
 
-    // if (query) url.searchParams.append('q', query)
+  //   if (query) url.searchParams.append('q', query)
 
-    // const response = await fetch(url)
-    // const data = await response.json()
+  //   const response = await fetch(url)
+  //   const data = await response.json()
 
+  //   setTransactions(data)
+  // }
+
+  const fetchTransactions = useCallback(async (query?: string) => {
     const response = await api.get('/transactions', {
       params: {
         _sort: 'createdAt',
@@ -44,9 +49,9 @@ export function TransactionsProvide({ children }: ProviderProps) {
     })
 
     setTransactions(response.data)
-  }
+  }, [])
 
-  async function createTransactions(data: TransactionDTO) {
+  const createTransactions = useCallback(async (data: TransactionDTO) => {
     const { description, category, type, price } = data
 
     const response = await api.post('/transactions', {
@@ -58,17 +63,17 @@ export function TransactionsProvide({ children }: ProviderProps) {
     })
 
     setTransactions((state) => [response.data, ...state])
-  }
+  }, [])
 
   useEffect(() => {
-    loadTransactions()
-  }, [])
+    fetchTransactions()
+  }, [fetchTransactions])
 
   return (
     <TransactionsContext.Provider
       value={{
         transactions,
-        fetchTransactions: loadTransactions,
+        fetchTransactions,
         createTransactions,
       }}
     >
