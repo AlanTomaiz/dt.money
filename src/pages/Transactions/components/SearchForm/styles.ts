@@ -29,7 +29,12 @@ export const FormContainer = styled.form`
     color: ${(props) => props.theme['green-300']};
     border: 1px solid ${(props) => props.theme['green-300']};
 
-    &:hover {
+    &:disabled {
+      opacity: 0.6;
+      cursor: default;
+    }
+
+    &:not(:disabled):hover {
       color: ${(props) => props.theme.white};
       background: ${(props) => props.theme['green-500']};
       border-color: ${(props) => props.theme['green-500']};
