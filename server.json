@@ -239,6 +239,14 @@
       "type": "income",
       "category": "Renda Extra",
       "createdAt": "2023-12-30T14:30:00Z"
+    },
+    {
+      "description": "Pastel",
+      "category": "Alimentação",
+      "type": "outcome",
+      "price": 3100,
+      "createdAt": "2024-02-05T11:56:41.000Z",
+      "id": "gnnzaRG"
     }
-  ]  
+  ]
 }
